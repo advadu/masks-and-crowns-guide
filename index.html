@@ -150,14 +150,6 @@ section{padding:34px 0}
 .score h3{font-size:20px;display:flex;justify-content:space-between;align-items:baseline}
 .score h3 small{font:700 14px/1 var(--head);color:var(--muted)}
 
-/* Grown-up corner */
-.tips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-@media (max-width:700px){.tips{grid-template-columns:minmax(0,1fr)}}
-.tip{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border-radius:1.4rem;padding:16px 18px;box-shadow:var(--shadow-sm)}
-.tip .e{flex:none;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:24px;background:var(--bg)}
-.tip h3{font-size:19px;margin-bottom:3px}
-.tip p{font-size:16px;color:#3d454c}
-
 /* Final call */
 .final{text-align:center;padding:50px 0 70px}
 .final .cast{display:flex;justify-content:center;gap:12px;margin:22px 0 26px}
@@ -346,19 +338,6 @@ footer{color:var(--muted);font-size:14px;text-align:center;padding-bottom:30px}
     </div>
   </section>
 
-  <!-- Grown-up corner -->
-  <section class="wrap">
-    <div class="sec-head"><div class="ico" style="background:var(--hero-tint)">🧑‍🍼</div><div><h2 data-t="gH">Grown-up corner</h2><p data-t="gP">Handy things to know.</p></div></div>
-    <div class="tips">
-      <div class="tip"><div class="e">🔊</div><div><h3 data-t="g1h">Music and sounds</h3><p data-t="g1p">Soft music on the home screen and cheerful sounds during the game. Each device has its own mute button.</p></div></div>
-      <div class="tip"><div class="e">⏸️</div><div><h3 data-t="g2h">Pause any time</h3><p data-t="g2p">Your settings let you pause the game, turn the sound on or off and switch between English and Hebrew.</p></div></div>
-      <div class="tip"><div class="e">⏭️</div><div><h3 data-t="g3h">Skip a turn</h3><p data-t="g3p">If the child’s device goes quiet (asleep or offline), a Skip turn button shows up so the game can go on.</p></div></div>
-      <div class="tip"><div class="e">📲</div><div><h3 data-t="g4h">Any screen</h3><p data-t="g4p">Works in the browser on phones and tablets, upright or sideways. Nothing to download.</p></div></div>
-      <div class="tip"><div class="e">❓</div><div><h3 data-t="g5h">Quick reminder</h3><p data-t="g5p">“How to play” on the home screen walks you through the rules in five short slides.</p></div></div>
-      <div class="tip"><div class="e">🤝</div><div><h3 data-t="g6h">Play together</h3><p data-t="g6p">Sit side by side, count the steps out loud and cheer for each other. That is the real treasure!</p></div></div>
-    </div>
-  </section>
-
   <div class="final wrap">
     <h2 class="title small" aria-label="Ready to play?" data-title="ready"><span class="w"><span class="l" style="color:#D4537E;animation-delay:0.00s">R</span><span class="l" style="color:#378ADD;animation-delay:0.08s">e</span><span class="l" style="color:#7F77DD;animation-delay:0.16s">a</span><span class="l" style="color:#1D9E75;animation-delay:0.24s">d</span><span class="l" style="color:#D4537E;animation-delay:0.32s">y</span></span> <span class="w"><span class="l" style="color:#378ADD;animation-delay:0.40s">t</span><span class="l" style="color:#7F77DD;animation-delay:0.48s">o</span></span> <span class="w"><span class="l" style="color:#1D9E75;animation-delay:0.56s">p</span><span class="l" style="color:#D4537E;animation-delay:0.64s">l</span><span class="l" style="color:#378ADD;animation-delay:0.72s">a</span><span class="l" style="color:#7F77DD;animation-delay:0.80s">y</span><span class="l" style="color:#1D9E75;animation-delay:0.88s">?</span></span></h2>
     <div class="cast"><span><svg viewBox="-30 -30 60 60" class="" aria-hidden="true"><g transform="translate(0 0) scale(0.72)"><path d="M-18 8 L-23 21 L23 21 L18 8 Z" fill="#0C447C" opacity="0.85"></path><circle r="20" fill="#85B7EB" stroke="#0C447C" stroke-width="2.5"></circle><g><rect x="-12" y="-5" width="24" height="9" rx="4.5" fill="#FAC775" stroke="#0C447C" stroke-width="1.5"></rect><path d="M1 -17 L-4 -9 L0 -9 L-2 -6" fill="none" stroke="#EF9F27" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path d="M-6 10 L6 10" stroke="#0C447C" stroke-width="2" stroke-linecap="round"></path></g></g></svg></span><span><svg viewBox="-30 -30 60 60" class="" aria-hidden="true"><g transform="translate(0 0) scale(0.72)"><path d="M-20 6 Q-26 22 -22 23 L22 23 Q26 22 20 6 Z" fill="#ED93B1" stroke="#72243E" stroke-width="2"></path><circle r="20" fill="#993C1D" stroke="#72243E" stroke-width="2.5"></circle><circle cy="3" r="14" fill="#FBE2C8"></circle><path d="M-14 -2 Q-12 -14 0 -14 Q12 -14 14 -2 Q7 -8 0 -7 Q-7 -8 -14 -2 Z" fill="#993C1D"></path><circle cx="-5" cy="2" r="2.2" fill="#2C2C2A"></circle><circle cx="5" cy="2" r="2.2" fill="#2C2C2A"></circle><circle cx="-9" cy="7" r="2.6" fill="#F4C0D1"></circle><circle cx="9" cy="7" r="2.6" fill="#F4C0D1"></circle><path d="M-4 9 Q0 12 4 9" fill="none" stroke="#993556" stroke-width="1.8" stroke-linecap="round"></path><path d="M-11 -14 L-11 -24 L-5.5 -18 L0 -26 L5.5 -18 L11 -24 L11 -14 Z" fill="#FAC775" stroke="#854F0B" stroke-width="1.5" stroke-linejoin="round"></path><circle cy="-17" r="2" fill="#72243E"></circle></g></svg></span><span><svg viewBox="-30 -30 60 60" class="" aria-hidden="true"><g transform="translate(0 0) scale(0.72)"><path d="M-18 8 L-23 21 L23 21 L18 8 Z" fill="#72243E" opacity="0.85"></path><circle r="20" fill="#ED93B1" stroke="#72243E" stroke-width="2.5"></circle><g><line x2="20" y2="0" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="14.142135623730951" y2="14.14213562373095" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="1.2246467991473533e-15" y2="20" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="-14.14213562373095" y2="14.142135623730951" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="-20" y2="2.4492935982947065e-15" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="-14.142135623730955" y2="-14.14213562373095" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="-3.673940397442059e-15" y2="-20" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="14.142135623730947" y2="-14.142135623730955" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><circle r="9" fill="none" stroke="#72243E" stroke-width="1.1" opacity="0.6"></circle><circle r="15" fill="none" stroke="#72243E" stroke-width="1.1" opacity="0.6"></circle><ellipse cx="-7" cy="-2" rx="5" ry="7" fill="#FFFFFF" stroke="#72243E" stroke-width="1.5" transform="rotate(20 -7 -2)"></ellipse><ellipse cx="7" cy="-2" rx="5" ry="7" fill="#FFFFFF" stroke="#72243E" stroke-width="1.5" transform="rotate(-20 7 -2)"></ellipse></g></g></svg></span><span><svg viewBox="-30 -30 60 60" class="" aria-hidden="true"><g transform="translate(0 0) scale(0.72)"><path d="M-20 6 Q-26 22 -22 23 L22 23 Q26 22 20 6 Z" fill="#AFA9EC" stroke="#3C3489" stroke-width="2"></path><circle r="20" fill="#444441" stroke="#3C3489" stroke-width="2.5"></circle><circle cy="3" r="14" fill="#FBE2C8"></circle><path d="M-14 -2 Q-12 -14 0 -14 Q12 -14 14 -2 Q7 -8 0 -7 Q-7 -8 -14 -2 Z" fill="#444441"></path><circle cx="-5" cy="2" r="2.2" fill="#2C2C2A"></circle><circle cx="5" cy="2" r="2.2" fill="#2C2C2A"></circle><circle cx="-9" cy="7" r="2.6" fill="#F4C0D1"></circle><circle cx="9" cy="7" r="2.6" fill="#F4C0D1"></circle><path d="M-4 9 Q0 12 4 9" fill="none" stroke="#993556" stroke-width="1.8" stroke-linecap="round"></path><path d="M-11 -14 L-11 -24 L-5.5 -18 L0 -26 L5.5 -18 L11 -24 L11 -14 Z" fill="#FAC775" stroke="#854F0B" stroke-width="1.5" stroke-linejoin="round"></path><circle cy="-17" r="2" fill="#3C3489"></circle></g></svg></span></div>
@@ -399,13 +378,6 @@ const HE = {
   v1h: "פותחים את האוצר!", v1p: "תיבת כוחות העל מתפוצצת במסכות וכוכבים, ותיבת התכשיטים באבני חן, פנינים וכתרים. עם קונפטי ותרועה!",
   v2h: "ניסיון מעולה!", v2p: "גם השחקן השני מקבל מסך חם ושמח. כל משחק נגמר בחיוך.", sb: "לוח תוצאות", sbG: "3 משחקים",
   v2s: `לוח התוצאות סופר ניצחונות כל עוד ממשיכים לשחק. לוחצים ${en("Play again")} לסיבוב נוסף!`,
-  gH: "פינת המבוגרים", gP: "דברים שכדאי לדעת.",
-  g1h: "מוזיקה וצלילים", g1p: "מוזיקה רכה במסך הבית וצלילים עליזים במשחק. לכל מכשיר כפתור השתקה משלו.",
-  g2h: "עוצרים מתי שרוצים", g2p: "בהגדרות אפשר לעצור את המשחק, להפעיל או לכבות צלילים ולעבור בין עברית לאנגלית.",
-  g3h: "מדלגים על תור", g3p: `אם המכשיר של הילד נרדם או התנתק, מופיע כפתור ${en("Skip turn")} כדי שהמשחק ימשיך.`,
-  g4h: "כל מסך", g4p: "עובד בדפדפן בטלפונים ובטאבלטים, לאורך או לרוחב. אין מה להוריד.",
-  g5h: "תזכורת מהירה", g5p: `הכפתור ${en("How to play")} במסך הבית מסביר את החוקים בחמש שקופיות קצרות.`,
-  g6h: "משחקים ביחד", g6p: "יושבים זה לצד זה, סופרים צעדים בקול ומעודדים. זה האוצר האמיתי!",
   playBig: "יאללה, משחקים! ◀", foot: "מסכות וכתרים · משחק לוח למבוגר ולילד בגילאי 4–6",
 };
 const EN = {};
