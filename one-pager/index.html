@@ -53,13 +53,8 @@ section{padding:14px 0}
 /* Video */
 .vhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
 .vhead h2{font-size:clamp(26px,4vw,34px)}
-.vhead .spacer{flex:1}
-.toggle{display:flex;background:var(--bg);border-radius:999px;padding:4px}
-.toggle button{border:0;background:none;font:800 15px/1 var(--head);padding:10px 14px;border-radius:999px;cursor:pointer;color:var(--muted)}
-.toggle button[aria-pressed=true]{background:var(--purple-dark);color:#fff}
 .player{display:flex;justify-content:center;background:#17202A;border-radius:1.4rem;overflow:hidden}
 .player video{display:block;width:100%;max-height:78vh;background:#17202A}
-.player.tall video{width:auto;height:min(78vh,760px);max-width:100%}
 .vnote{margin-top:12px;color:var(--muted);font-size:15px;text-align:center}
 
 /* Notes */
@@ -122,11 +117,6 @@ footer{color:var(--muted);font-size:14px;text-align:center;padding:26px 0 36px}
     <div class="card">
       <div class="vhead">
         <h2>🎬 The 30-second ad</h2>
-        <div class="spacer"></div>
-        <div class="toggle" role="group" aria-label="Video format">
-          <button type="button" data-v="16x9" aria-pressed="true">16:9</button>
-          <button type="button" data-v="9x16" aria-pressed="false">Vertical</button>
-        </div>
       </div>
       <div class="player" id="player">
         <video id="video" controls playsinline preload="metadata" poster="media/poster-16x9.jpg" src="media/ad-16x9.mp4"></video>
@@ -160,17 +150,5 @@ footer{color:var(--muted);font-size:14px;text-align:center;padding:26px 0 36px}
   <div class="cast"><span><svg viewBox="-30 -30 60 60" class="" aria-hidden="true"><g transform="translate(0 0) scale(0.72)"><path d="M-18 8 L-23 21 L23 21 L18 8 Z" fill="#0C447C" opacity="0.85"></path><circle r="20" fill="#85B7EB" stroke="#0C447C" stroke-width="2.5"></circle><g><rect x="-12" y="-5" width="24" height="9" rx="4.5" fill="#FAC775" stroke="#0C447C" stroke-width="1.5"></rect><path d="M1 -17 L-4 -9 L0 -9 L-2 -6" fill="none" stroke="#EF9F27" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path d="M-6 10 L6 10" stroke="#0C447C" stroke-width="2" stroke-linecap="round"></path></g></g></svg></span><span><svg viewBox="-30 -30 60 60" class="" aria-hidden="true"><g transform="translate(0 0) scale(0.72)"><path d="M-20 6 Q-26 22 -22 23 L22 23 Q26 22 20 6 Z" fill="#ED93B1" stroke="#72243E" stroke-width="2"></path><circle r="20" fill="#993C1D" stroke="#72243E" stroke-width="2.5"></circle><circle cy="3" r="14" fill="#FBE2C8"></circle><path d="M-14 -2 Q-12 -14 0 -14 Q12 -14 14 -2 Q7 -8 0 -7 Q-7 -8 -14 -2 Z" fill="#993C1D"></path><circle cx="-5" cy="2" r="2.2" fill="#2C2C2A"></circle><circle cx="5" cy="2" r="2.2" fill="#2C2C2A"></circle><circle cx="-9" cy="7" r="2.6" fill="#F4C0D1"></circle><circle cx="9" cy="7" r="2.6" fill="#F4C0D1"></circle><path d="M-4 9 Q0 12 4 9" fill="none" stroke="#993556" stroke-width="1.8" stroke-linecap="round"></path><path d="M-11 -14 L-11 -24 L-5.5 -18 L0 -26 L5.5 -18 L11 -24 L11 -14 Z" fill="#FAC775" stroke="#854F0B" stroke-width="1.5" stroke-linejoin="round"></path><circle cy="-17" r="2" fill="#72243E"></circle></g></svg></span><span><svg viewBox="-30 -30 60 60" class="" aria-hidden="true"><g transform="translate(0 0) scale(0.72)"><path d="M-18 8 L-23 21 L23 21 L18 8 Z" fill="#72243E" opacity="0.85"></path><circle r="20" fill="#ED93B1" stroke="#72243E" stroke-width="2.5"></circle><g><line x2="20" y2="0" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="14.142135623730951" y2="14.14213562373095" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="1.2246467991473533e-15" y2="20" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="-14.14213562373095" y2="14.142135623730951" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="-20" y2="2.4492935982947065e-15" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="-14.142135623730955" y2="-14.14213562373095" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="-3.673940397442059e-15" y2="-20" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><line x2="14.142135623730947" y2="-14.142135623730955" stroke="#72243E" stroke-width="1.1" opacity="0.6"></line><circle r="9" fill="none" stroke="#72243E" stroke-width="1.1" opacity="0.6"></circle><circle r="15" fill="none" stroke="#72243E" stroke-width="1.1" opacity="0.6"></circle><ellipse cx="-7" cy="-2" rx="5" ry="7" fill="#FFFFFF" stroke="#72243E" stroke-width="1.5" transform="rotate(20 -7 -2)"></ellipse><ellipse cx="7" cy="-2" rx="5" ry="7" fill="#FFFFFF" stroke="#72243E" stroke-width="1.5" transform="rotate(-20 7 -2)"></ellipse></g></g></svg></span><span><svg viewBox="-30 -30 60 60" class="" aria-hidden="true"><g transform="translate(0 0) scale(0.72)"><path d="M-20 6 Q-26 22 -22 23 L22 23 Q26 22 20 6 Z" fill="#AFA9EC" stroke="#3C3489" stroke-width="2"></path><circle r="20" fill="#444441" stroke="#3C3489" stroke-width="2.5"></circle><circle cy="3" r="14" fill="#FBE2C8"></circle><path d="M-14 -2 Q-12 -14 0 -14 Q12 -14 14 -2 Q7 -8 0 -7 Q-7 -8 -14 -2 Z" fill="#444441"></path><circle cx="-5" cy="2" r="2.2" fill="#2C2C2A"></circle><circle cx="5" cy="2" r="2.2" fill="#2C2C2A"></circle><circle cx="-9" cy="7" r="2.6" fill="#F4C0D1"></circle><circle cx="9" cy="7" r="2.6" fill="#F4C0D1"></circle><path d="M-4 9 Q0 12 4 9" fill="none" stroke="#993556" stroke-width="1.8" stroke-linecap="round"></path><path d="M-11 -14 L-11 -24 L-5.5 -18 L0 -26 L5.5 -18 L11 -24 L11 -14 Z" fill="#FAC775" stroke="#854F0B" stroke-width="1.5" stroke-linejoin="round"></path><circle cy="-17" r="2" fill="#3C3489"></circle></g></svg></span></div>
   Masks and Crowns · thanks for taking a look!
 </footer>
-<script>
-// Switch the ad between the 16:9 and the vertical cut, keeping where it was.
-const video = document.getElementById("video"), player = document.getElementById("player");
-document.querySelectorAll(".toggle button").forEach((b) => b.addEventListener("click", () => {
-  const v = b.dataset.v, at = video.currentTime, playing = !video.paused;
-  document.querySelectorAll(".toggle button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-  player.classList.toggle("tall", v === "9x16");
-  video.poster = `media/poster-${v}.jpg`;
-  video.src = `media/ad-${v}.mp4`;
-  video.addEventListener("loadedmetadata", () => { video.currentTime = at; if (playing) video.play(); }, { once: true });
-}));
-</script>
 </body>
 </html>
